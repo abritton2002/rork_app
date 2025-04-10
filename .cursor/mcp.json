@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "supabase": {
+      "command": "powershell",
+      "args": [
+        "-Command",
+        "mcp-server-supabase",
+        "--access-token",
+        "sbp_012a896d295ffa07b83319abdc37094ce232cb48"
+      ]
+    },
+    "firecrawl-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "firecrawl-mcp"
+      ],
+      "env": {
+        "FIRECRAWL_API_KEY": "fc-fca1c8a931c244fe897035cec1640db6"
+      }
+  }
+  }
+}

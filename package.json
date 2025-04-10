@@ -3,9 +3,11 @@
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
-    "start": "expo start --localhost",
+    "start": "expo start --dev-client",
+    "start-clean": "expo start -c",
     "start-web": "expo start --web",
-    "start-web-dev": "DEBUG=expo* expo start --web"
+    "start-web-dev": "expo start --web",
+    "prebuild": "expo prebuild --clean"
   },
   "dependencies": {
     "@expo/vector-icons": "^14.0.2",
@@ -48,6 +50,7 @@
     "@expo/ngrok": "^4.1.0",
     "@types/expo": "^32.0.13",
     "@types/react": "~18.3.12",
+    "cross-env": "^7.0.3",
     "expo-module-scripts": "^4.0.5",
     "typescript": "~5.8.2"
   },
